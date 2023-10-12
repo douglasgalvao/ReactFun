@@ -4,11 +4,11 @@ import LoginIcon from '@mui/icons-material/Login';
 import HomeIcon from '@mui/icons-material/Home';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LogoDevIcon from '@mui/icons-material/LogoDev';
-import Avatar from '@mui/material/Avatar';
 import './Index.css';
+import { Profile } from '../Avatar/Index';
 
 interface NavbarProps {
-  // Defina as propriedades da Navbar, se necessário
+    avatarImagemPath: string
 }
 
 interface MeuLinkProps {
@@ -39,8 +39,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
           <LoginIcon />
           <MeuLink to="/login">Log out</MeuLink>
         </div>
-          <Avatar />
-        
+          <Profile path='../../images/eu.png'/>
       </div>
     </nav>
   );
