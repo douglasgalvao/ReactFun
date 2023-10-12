@@ -4,6 +4,7 @@ import LoginIcon from '@mui/icons-material/Login';
 import HomeIcon from '@mui/icons-material/Home';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LogoDevIcon from '@mui/icons-material/LogoDev';
+import Avatar from '@mui/material/Avatar';
 import './Index.css';
 
 interface NavbarProps {
@@ -28,7 +29,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
       <div className="nav-items">
         <div className="nav-item">
           <HomeIcon />
-          <MeuLink to="/">Home</MeuLink>
+          <MeuLink to="/home">Home</MeuLink>
         </div>
         <div className="nav-item">
           <ShoppingCartIcon />
@@ -38,6 +39,8 @@ export const Navbar: React.FC<NavbarProps> = () => {
           <LoginIcon />
           <MeuLink to="/login">Log out</MeuLink>
         </div>
+          <Avatar />
+        
       </div>
     </nav>
   );
