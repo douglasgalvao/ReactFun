@@ -1,0 +1,46 @@
+/* Resetando margens e preenchimentos para o body e o HTML */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Definindo uma altura mínima para garantir que o conteúdo não fique muito próximo ao topo */
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilos padrão para o Navbar */
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-items {
+    display: flex;
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+  }
+  
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-item a:hover {
+    text-decoration: underline;
+  }
+  
