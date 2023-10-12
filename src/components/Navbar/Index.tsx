@@ -32,7 +32,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
         </div>
         <div className="nav-item">
           <ShoppingCartIcon />
-          <MeuLink to="/produtos">Produtos</MeuLink>
+          <MeuLink to="/products">Products</MeuLink>
         </div>
         <div className="nav-item">
           <LoginIcon />
