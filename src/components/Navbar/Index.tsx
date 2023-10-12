@@ -5,6 +5,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LogoDevIcon from '@mui/icons-material/LogoDev';
 import './Index.css';
+import img from '../../images/eu.png';
 import { Profile } from '../Avatar/Index';
 
 interface NavbarProps {
@@ -20,7 +21,7 @@ const MeuLink: React.FC<MeuLinkProps> = ({ to, children }) => {
   return <Link to={to}>{children}</Link>;
 };
 
-export const Navbar: React.FC<NavbarProps> = () => {
+export const Navbar: React.FC<NavbarProps> = ({avatarImagemPath}:NavbarProps) => {
   return (
     <nav className="navbar">
       <div className="logo">
@@ -39,7 +40,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
           <LoginIcon />
           <MeuLink to="/login">Log out</MeuLink>
         </div>
-          <Profile path='../../images/eu.png'/>
+          <Profile path={avatarImagemPath}/>
       </div>
     </nav>
   );
